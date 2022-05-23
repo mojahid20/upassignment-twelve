@@ -9,6 +9,7 @@ import Footer from './Pages/Shared/Footer';
 import Login from './Pages/Shared/Login';
 import Navbar from './Pages/Shared/Navbar';
 import Notfound from './Pages/Shared/Notfound';
+import SignUp from './Pages/Shared/SignUp';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/SignUp" element={<SignUp />} />
         <Route path="/summary" element={<Summary />} />
        
         <Route path="/footer" element={<Footer />} />
