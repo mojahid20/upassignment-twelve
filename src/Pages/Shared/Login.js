@@ -1,22 +1,38 @@
 import React, { useRef } from "react";
 import auth from "../../firebase.init";
 
-import {  useSignInWithGoogle } from "react-firebase-hooks/auth";
+import {  useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
    // for google sign in
   const [signInWithGoogle, guser, gloading, gerror] = useSignInWithGoogle(auth);
   
- 
+  const [
+    signInWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useSignInWithEmailAndPassword(auth);
+
+  
+
   const emailRef = useRef("");
   const passwordRef = useRef("");
-
+  const navigate=useNavigate()
   const handalSubmit = (event) => {
     event.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
-   console.log(email,password)
+   signInWithEmailAndPassword(email,password)
   };
+
+  if( guser || user){
+    navigate('/')
+  }
+  if (gloading || loading) {
+    return <p>loading...</p>;
+  }
+  if (gerror || error) return <p>Error:{gerror.message}</p>;
 
   const handalsignup=() =>{
     navigate('/signup');
@@ -24,15 +40,8 @@ const Login = () => {
  
  
   
-  const navigate=useNavigate()
-  if( guser){
-    navigate('/')
-  }
-  if (gloading) {
-    return <p>loading...</p>;
-  }
-  if (gerror) return <p>Error:{gerror.message}</p>;
-
+  
+  
 
   return (
     <div class="card w-96 bg-neutral text-neutral-content">
