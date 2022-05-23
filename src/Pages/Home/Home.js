@@ -1,9 +1,22 @@
 import React from 'react';
+import Footer from '../Shared/Footer';
+import Banner from './Banner';
+import Contact from './Contact';
+import Products from './Products';
+
+import Summary from './Summary';
+import Testimonial from './Testimonial';
+
 
 const Home = () => {
     return (
-        <div>
-            <h3>homae paer</h3>
+        <div >
+            <Banner />
+            <Products />
+            <Testimonial />
+            <Summary />
+            <Contact />
+           <Footer />
         </div>
     );
 };
