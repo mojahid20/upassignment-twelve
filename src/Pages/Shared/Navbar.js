@@ -14,8 +14,12 @@ const Navbar = () => {
     const menuitems= <>
       <li><Link to="/">Home</Link></li>
       <li><Link to="/blogs">Blogs</Link></li>
-      <li><Link to="#business Summary">business Summary</Link></li>
-      <li><Link to="#review">Review</Link></li>
+      <li><Link to="/business Summary">business Summary</Link></li>
+      <li><Link to="/review">Review</Link></li>
+
+      {
+        user && <li><Link to="/Dashbord">Dahsbord</Link></li>
+      }
       <li>{
          user ? <button class="btn btn-active btn-link" onClick={logout}>Log Out</button> :
         <Link to="/login">login</Link>}</li>

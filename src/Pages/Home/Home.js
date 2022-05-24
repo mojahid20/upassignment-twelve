@@ -4,6 +4,7 @@ import Banner from './Banner';
 import Contact from './Contact';
 import Parts from './Parts';
 import Products from './Products';
+import Review from './Review';
 
 import Summary from './Summary';
 import Testimonial from './Testimonial';
