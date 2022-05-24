@@ -2,7 +2,7 @@
     {
         "id": 1,
         "img": "https://i.ibb.co/Z1SHHdm/download-1.jpg",
-        "name": "Harry potter",
+        "name": "rans and scro",
         "price":200,
         "quantity": 6,
         
@@ -12,7 +12,7 @@
     {
         "id": 2,
         "img": "https://i.ibb.co/2SQwry9/images-1.jpg",
-        "name": "Workd History",
+        "name": "Undefined Tool IRadix",
         "price":99,
         "quantity": 4,
         
@@ -22,7 +22,7 @@
     {
         "id": 3,
         "img": "https://i.ibb.co/qM9fs1T/images-2.jpg",
-        "name": "Harry potter",
+        "name": "Drill Series 3 Brandix",
         "price":129,
         "quantity": 5,
         
@@ -32,7 +32,7 @@
      {
         "id": 4,
         "img": "https://i.ibb.co/qBYyQd5/drill.jpg",
-        "name": "Your life",
+        "name": "Drill Series 3 Brandix",
         "price":59,
         "quantity": 3,
         
@@ -42,7 +42,7 @@
     {
         "id": 5,
         "img": "https://i.ibb.co/jwzqYJ7/kisspng-wrench-set-tool-product-physical-hardware-tools-wrench-5a812e4a674606-618987991518415434423.jpg",
-        "name": "free ebook",
+        "name": "cutter meshin",
         "price":229,
         "quantity": 2,
         
@@ -51,8 +51,8 @@
     },
     {
         "id": 6,
-        "img": "https://i.ibb.co/q1Kw8v1/kisspng-robert-bosch-gmbh-angle-grinder-grinding-machine-b-auxiliary-tools-5add7096a9c993-5196346015.jpg",
-        "name": "THE SUN",
+        "img": "https://i.ibb.co/qBYyQd5/drill.jpg",
+        "name": "Drill Series 3 Brandix",
         "price":109,
         "quantity": 1,
         

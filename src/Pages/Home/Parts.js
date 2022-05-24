@@ -4,7 +4,7 @@ import Part from './Part';
 const Parts = () => {
     const [parts, setParts]=useState([]);
     useEffect(()=>{
-        fetch('Service.json')
+        fetch('http://localhost:5000/service')
         .then(res=> res.json())
         .then(data=> setParts(data));
     },[])
