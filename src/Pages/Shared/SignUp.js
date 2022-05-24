@@ -32,7 +32,8 @@ if(user){
 }
 
     return (
-        <div class="card w-96 bg-neutral text-neutral-content">
+      <div className='flex justify-center items-center'>
+        <div class="card w-96 bg-neutral text-neutral-content ">
       <div class="card-body items-center text-center">
          <h1 className="text-3xl my-3">Plese Sign Up</h1>
        
@@ -48,13 +49,14 @@ if(user){
        <button  className="btn btn-primary">Sign Up</button>
 
        </form>
-       <p className="mt-3 text-center">All ready have an Account? <Link to='/login' onClick={handallogin} className="text-danger mt-3 text-decoration-none">Plese Login</Link> </p>
+       <p className="mt-3 text-center">All ready have an Account ? <Link to='/login' onClick={handallogin} className="text-danger mt-3 text-decoration-none">Plese Login</Link> </p>
        
-        <div class="divider">OR</div>
+        
         <div class="card-actions justify-end">
           
         </div>
       </div>
+    </div>
     </div>
     );
 };

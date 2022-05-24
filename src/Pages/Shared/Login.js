@@ -2,10 +2,16 @@ import React, { useRef } from "react";
 import auth from "../../firebase.init";
 
 import {  useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import Loading from "./Loading";
 const Login = () => {
    // for google sign in
   const [signInWithGoogle, guser, gloading, gerror] = useSignInWithGoogle(auth);
+  const emailRef = useRef("");
+  const passwordRef = useRef("");
+  const navigate=useNavigate()
+  const location=useLocation()
+  let from = location.state?.from?.pathname || "/";
   
   const [
     signInWithEmailAndPassword,
@@ -13,12 +19,10 @@ const Login = () => {
     loading,
     error,
   ] = useSignInWithEmailAndPassword(auth);
-
   
 
-  const emailRef = useRef("");
-  const passwordRef = useRef("");
-  const navigate=useNavigate()
+ 
+ 
   const handalSubmit = (event) => {
     event.preventDefault();
     const email = emailRef.current.value;
@@ -27,10 +31,10 @@ const Login = () => {
   };
 
   if( guser || user){
-    navigate('/')
+    navigate(from, { replace: true });
   }
-  if (gloading || loading) {
-    return <p>loading...</p>;
+  if (  gloading || loading) {
+    return <Loading />
   }
   if (gerror || error) return <p>Error:{gerror.message}</p>;
 
@@ -44,6 +48,7 @@ const Login = () => {
   
 
   return (
+    <div className=" flex justify-center items-center">
     <div class="card w-96 bg-neutral text-neutral-content">
       <div class="card-body items-center text-center">
          <h1 className="text-3xl my-3">Plese Login</h1>
@@ -66,6 +71,7 @@ const Login = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };

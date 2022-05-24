@@ -2,7 +2,9 @@ import React from 'react';
 
 const Summary = () => {
     return (
-        <div></div>
+        <div id='business Summary'>
+            <h2>this is summayr</h2>
+        </div>
     );
 };
 

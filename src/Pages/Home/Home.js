@@ -7,7 +7,7 @@ import Products from './Products';
 
 import Summary from './Summary';
 import Testimonial from './Testimonial';
-import Tools from './Tools';
+
 
 
 const Home = () => {
