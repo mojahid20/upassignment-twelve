@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Part = ({p}) => {
-  const {id, name,img,description,price,quantity}=p;
+  const {_id, name,img,description,price,quantity}=p;
 const navigate=useNavigate()
 
   const navigateTodatils= id=>{
@@ -17,7 +17,7 @@ const navigate=useNavigate()
           <h4>price {price}</h4>
           
           <h5>description <p>{description}</p> </h5>
-          <button onClick={()=> navigateTodatils(id)} class="btn btn-outline btn-primary bottom-0 block">Book Now</button>
+          <button onClick={()=> navigateTodatils(_id)} class="btn btn-outline btn-primary bottom-0 block">Book Now</button>
         </div>
       </div>
     );
