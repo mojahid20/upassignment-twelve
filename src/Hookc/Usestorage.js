@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 
+
 const Usestorage=()=>{
-    const [parts, setParts]=useState([]);
+    const [storages,setStorages]=useState([]);
     useEffect(()=>{
         fetch('http://localhost:5000/service')
         .then(res=> res.json())
-        .then(data=> setParts(data));
+        .then(data=> setStorages(data));
     },[]);
-    return [parts,setParts]
+    return [storages,setStorages];
 };
 export default Usestorage;

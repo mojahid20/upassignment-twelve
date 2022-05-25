@@ -1,5 +1,6 @@
 import React from "react";
-import Usestorage from "../../Hookc/Hookc";
+import Usestorage from "../../Hookc/Usestorage";
+
 
 const Mannage = () => {
   const [parts, setParts] = Usestorage();

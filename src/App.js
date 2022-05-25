@@ -28,10 +28,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+        <Route path='/part/:partsId'element={<PartsDatiles />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/summary" element={<Summary />} />
         <Route path="/blogs" element={<Blogs />} />
-        <Route path='/checkout' element={
+        <Route path='/checkout/:partsId' element={
           <RequireAuth>
             <Checkout />
           </RequireAuth>
@@ -54,7 +55,7 @@ function App() {
         <Route index element={<Appiontment />}></Route>
         <Route path='review' element={<Myreview />}></Route>
         </Route>
-        <Route path='/part/:partsId'element={<PartsDatiles />} />
+       
        
         <Route path="/footer" element={<Footer />} />
         <Route  path='*' element={<Notfound />}/>
