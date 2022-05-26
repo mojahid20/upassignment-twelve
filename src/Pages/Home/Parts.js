@@ -9,7 +9,7 @@ const Parts = () => {
         .then(data=> setParts(data));
     },[])
     return (
-        <div>
+        <div className='mx-10'>
             <h2 className='text-center my-5 text-5xl'>Power Parts </h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10'>
             {

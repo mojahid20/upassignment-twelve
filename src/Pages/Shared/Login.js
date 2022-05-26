@@ -54,9 +54,9 @@ const Login = () => {
          <h1 className="text-3xl my-3">Plese Login</h1>
        
        <form onSubmitCapture={handalSubmit}>
-         <input ref={emailRef} type="email" placeholder="email" required className="py-2 border my-2" />
+         <input ref={emailRef} type="email" placeholder="email" required className="p-2 border my-2" />
          <br />
-         <input ref={passwordRef} type="password" placeholder="password" required className="py-2 border my-2" />
+         <input  ref={passwordRef} type="password" placeholder="password" required className="p-2  my-2" />
          <br />
          
        <button  className="btn btn-primary">login</button>

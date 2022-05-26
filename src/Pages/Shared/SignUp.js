@@ -38,12 +38,12 @@ if(user){
          <h1 className="text-3xl my-3">Plese Sign Up</h1>
        
        <form onSubmit={handalsignup}>
-       <input ref={namelRef} type="name" placeholder="name" required className="py-2 border my-2" />
+       <input ref={namelRef} type="name" placeholder="name" required className="p-2 border my-2" />
        
 
-         <input ref={emailRef} type="email" placeholder="email" required className="py-2 border my-2" />
+         <input ref={emailRef} type="email" placeholder="email" required className="p-2 border my-2" />
          <br />
-         <input ref={PasswordRef} type="password" placeholder="password" required className="py-2 border my-2" />
+         <input ref={PasswordRef} type="password" placeholder="password" required className="py-2 border p-2 mb-3" />
          <br />
          
        <button  className="btn btn-primary">Sign Up</button>

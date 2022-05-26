@@ -6,7 +6,7 @@ const Product = ({product}) => {
       <div class="card-body">
       <div class="avatar">
   <div class="w-48 rounded">
-    <img src={product.img} />
+    <img src={product.img} alt='' />
   </div>
 </div>
           <div>

@@ -28,7 +28,7 @@ const Testimonial = () => {
         },
     ]
     return (
-        <section >
+        <section  className='mx-10'>
             <div className='text-center my-5'>
             <h3 className='text-3xl text-primary'>Reviews</h3>
             <h4>whats Our Client Say</h4>

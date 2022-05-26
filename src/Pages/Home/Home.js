@@ -7,6 +7,7 @@ import Products from './Products';
 import Review from './Review';
 
 import Summary from './Summary';
+import Summarys from './Summarys';
 import Testimonial from './Testimonial';
 
 
@@ -18,7 +19,7 @@ const Home = () => {
             <Parts />
             <Products />
             <Testimonial />
-            <Summary />
+            <Summarys />
             <Contact />
            <Footer />
         </div>

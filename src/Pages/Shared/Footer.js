@@ -7,6 +7,7 @@ const Footer = () => {
 
 background:`url(${shape2})`,
 backgroundSize:'cover',
+opacity:.7,
 
 }}>
 <div>
