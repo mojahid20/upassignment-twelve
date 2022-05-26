@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Services = () => {
+const Profile = () => {
     return (
         <div>
-            
+            <h1>My profile</h1>
         </div>
     );
 };
 
-export default Services;
+export default Profile;

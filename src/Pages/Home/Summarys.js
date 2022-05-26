@@ -37,18 +37,18 @@ const Summarys = () => {
         },
     ]
     return (
-        <section className='mx-10'style={{
+        <section id='summary' className='mx-10'style={{
 
             background:`url(${banner2})`,
             backgroundSize:'cover',
             backgroundRepeat:'no-repeat',
             
             }}>
-        <div className='text-center text-3xl mt-5'>
+        <div  className='text-center text-3xl mt-5'>
              <h3 className='font-bold'>Summary page</h3>
              
          </div>
-         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10'>
+         <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10'>
               {
              summarys.map(summary => <Summary
              key={summary.id}

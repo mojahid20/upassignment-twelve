@@ -14,8 +14,10 @@ const Navbar = () => {
     const menuitems= <>
       <li><Link to="/">Home</Link></li>
       <li><Link to="/blogs">Blogs</Link></li>
-      <li><Link to="/business Summary">business Summary</Link></li>
-      <li><Link to="/review">Review</Link></li>
+      <li><Link to="/Myportfolio">Myportfolio</Link></li>
+     
+      <li><a href="#review">review</a></li>
+      <li><a href="#Summary"> Summary</a></li>
       {
         user && <>
         <li><Link to="/Addservice">Add Items</Link></li>
