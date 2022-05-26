@@ -1,5 +1,6 @@
 import React from "react";
-import Usestorage from "../../Hookc/Usestorage";
+import Usestorage from "../../Hookc/Usesotrage";
+
 
 
 const Mannage = () => {

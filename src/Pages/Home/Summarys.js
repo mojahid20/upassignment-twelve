@@ -1,8 +1,8 @@
 import React from 'react';
-import like from '../../Assete/icon/like.jpg'
+import like from '../../Assete/icon/like.png'
 import project from '../../Assete/icon/project.png'
 import fleg from '../../Assete/icon/flag.png'
-import viewr from '../../Assete/icon/viewr.jpg'
+import viewr from '../../Assete/icon/viewr.png'
 import banner2 from '../../Assete/icon/banner2.jpg'
 import Summary from './Summary';
 const Summarys = () => {
@@ -10,7 +10,7 @@ const Summarys = () => {
         {
             id:1,
             count:"55",
-            hading:"states",
+            hading:"support",
             
             img:like,
         },
@@ -24,14 +24,14 @@ const Summarys = () => {
         {
             id:3,
             count:'400+',
-            hading:"helpful client",
+            hading:"stats",
         
             img:fleg,
         },
         {
             id:4,
             count:'350+',
-            hading:"opion",
+            hading:"helpful client",
             
             img:viewr,
         },

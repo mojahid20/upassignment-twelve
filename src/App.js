@@ -15,12 +15,14 @@ import PartsDatiles from './Pages/Home/PartsDatiles';
 
 import Summary from './Pages/Home/Summary';
 import Mannage from './Pages/Mannage/Mannage';
+import Orders from './Pages/Order/Orders';
 import Footer from './Pages/Shared/Footer';
 import Login from './Pages/Shared/Login';
 import Navbar from './Pages/Shared/Navbar';
 import Notfound from './Pages/Shared/Notfound';
 import RequireAuth from './Pages/Shared/RequireAuth';
 import SignUp from './Pages/Shared/SignUp';
+
 
 function App() {
   return (
@@ -50,6 +52,11 @@ function App() {
             <Mannage />
           </RequireAuth>
         } />
+        <Route path='/Orders' element={
+          <RequireAuth>
+            <Orders />
+          </RequireAuth>
+        } />
         <Route path='/Dashbord' element={
           <RequireAuth>
             <Dashbord />
@@ -64,6 +71,7 @@ function App() {
         <Route path="/footer" element={<Footer />} />
         <Route  path='*' element={<Notfound />}/>
       </Routes>
+    
    </div>
   );
 }

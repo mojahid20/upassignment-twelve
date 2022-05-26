@@ -3,20 +3,20 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-
+import UseserviceDailes from '../../Hookc/UseserviceDailes'
 
 const PartsDatiles = () => {
   const { partsId } = useParams();
- 
+  const [service]= UseserviceDailes(partsId)
 
-  const [service, setService]=useState({});
+  // const [service, setService]=useState({});
 
-  useEffect(()=>{
-    const url=`http://localhost:5000/service/${partsId}`
-    fetch(url)
-    .then(res=> res.json())
-    .then(data=> setService(data))
-  },[])
+  // useEffect(()=>{
+  //   const url=`http://localhost:5000/service/${partsId}`
+  //   fetch(url)
+  //   .then(res=> res.json())
+  //   .then(data=> setService(data))
+  // },[])
   return (
     <div>
       

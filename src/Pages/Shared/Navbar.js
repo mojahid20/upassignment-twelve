@@ -20,8 +20,9 @@ const Navbar = () => {
       <li><a href="#Summary"> Summary</a></li>
       {
         user && <>
-        <li><Link to="/Addservice">Add Items</Link></li>
-        <li><Link to="/Mannage">Mannage Items</Link></li>
+        <li><Link to="Addservice">Add Items</Link></li>
+        <li><Link to="Mannage">Mannage Items</Link></li>
+        <li><Link to="Orders">Order</Link></li>
         </>
       }
       {

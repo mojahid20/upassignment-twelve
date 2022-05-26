@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-
 const Usestorage=()=>{
     const [storages,setStorages]=useState([]);
     useEffect(()=>{

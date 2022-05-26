@@ -22,6 +22,7 @@ const Home = () => {
             <Summarys />
             <Contact />
            <Footer />
+
         </div>
     );
 };
