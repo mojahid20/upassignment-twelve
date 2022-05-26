@@ -1,10 +1,16 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### this project is created my tailwind css and daisu Ui fremwork
 
-## Available Scripts
+# My Website Name:
 
-In the project directory, you can run:
+# Power Tools
+
+- in this project i used simple navbar hompage and footer.
+- i add review nice review pages .
+- and also add summary pages and contact pages.
+- i usesd authentication in firebase.
+- sign in with google . email and password ans sign up pages.
 
 ### `npm start`
 
