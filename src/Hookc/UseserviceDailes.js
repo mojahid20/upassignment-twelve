@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 
-const UseserviceDailes= partsId=>{
-    const [service, setService]=useState({});
+const UseserviceDailes = (partsId) => {
+  const [service, setService] = useState({});
 
-  useEffect(()=>{
-    const url=`http://localhost:5000/service/${partsId}`
+  useEffect(() => {
+    const url = `https://secure-anchorage-02731.herokuapp.com/service/${partsId}`;
     fetch(url)
-    .then(res=> res.json())
-    .then(data=> setService(data))
-  },[partsId])
-  return [service]
-}
+      .then((res) => res.json())
+      .then((data) => setService(data));
+  }, [partsId]);
+  return [service];
+};
 export default UseserviceDailes;
