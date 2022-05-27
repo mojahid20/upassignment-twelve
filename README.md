@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+## live site link: https://power-tools-6514c.web.app/
+
 ### this project is created my tailwind css and daisu Ui fremwork
 
 # My Website Name:
